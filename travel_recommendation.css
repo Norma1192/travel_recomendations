@@ -1,3 +1,7 @@
+body {
+    background-image: url("background.jpg");
+}
+
 nav {
     background-color: #f0f0f0;
     padding: 20px;
@@ -34,4 +38,35 @@ nav a {
 #logo h2{
     text-align: center;
     margin: 1px;
+}
+
+div.content-child {
+    display: inline-block;
+    padding: 50px;
+    margin: 1px;
+    width: 50%;
+    vertical-align: middle;
+    height: 80%;
+}
+
+div.content-parent {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    height: 800px;
+}
+
+div.left {
+    align-content: center;
+    
+}
+
+div.left h1 {
+    right: 10px;
+    font-size: 50px;
+    font-family: "Arsenal SC", sans-serif;
+}
+
+.content-text {
+    color:cornsilk;
 }

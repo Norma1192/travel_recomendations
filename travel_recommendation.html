@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Around the World</title>
     <link rel="stylesheet" href="./travel_recommendation.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: "Trirong", serif;
+        }
+    </style>
 </head>
 
 <body>
@@ -21,19 +32,22 @@
         </ul>
         <ul class="ul-navbar" id="ul-right">
             <li><input type="text" id="" placeholder="Enter a destination keyword"></li>
-            <li><button>Search</button></li>
-            <li><button>Reset</button></li>
+            <li><button onclick="searchInfo()">Search</button></li>
+            <li><button onclick="resetInfo()">Reset</button></li>
         </ul>
     </nav>
-
-    <div>
-        <h1>Live the experience</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tristique odio orci, sed dictum eros fermentum sit amet. Cras at orci at tortor condimentum semper. Donec euismod diam vel tortor.</p>
+    <div class="content-parent" style="border: solid 1px yellow;">
+        <div class="content-child left" style="border: solid 1px red;">
+            <h1 class="content-text">Live the Experience</h1>
+            <p class="content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tristique odio orci,
+                sed dictum eros fermentum sit amet. Cras at orci at tortor condimentum semper. Donec euismod diam vel
+                tortor.</p>
+        </div>
+        <div class="content-child right" style="border: solid 1px blue;">
+            <p>content</p>
+        </div>
     </div>
-    <div>
-        
-    </div>
-
+    <script src="./travel_recommendation.js"></script>
 </body>
 
 </html>
