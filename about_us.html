@@ -15,6 +15,13 @@
             body {
                 font-family: "Trirong", serif;
             }
+
+            table, th, td {
+                border-collapse: collapse;
+                text-align: center;
+                color: rgb(40, 40, 40);
+                background-color: rgba(255, 248, 220, 0.5);
+            }
         </style>
     </head>
 <body>
@@ -28,14 +35,54 @@
             <li><a href="./about_us.html">About Us</a></li>
             <li><a href="./contact_us.html">Contact Us</a></li>
         </ul>
-        <ul class="ul-navbar" id="ul-right">
-            <li><input type="text" id="" placeholder="Enter a destination keyword"></li>
-            <li><button onclick="searchInfo()">Search</button></li>
-            <li><button onclick="resetInfo()">Reset</button></li>
-        </ul>
     </nav>
 
-
-    <script src="./travel_recommendation.js"></script>
+    <div class="content-parent">
+        <div class="content-child left">
+            <h1 class="content-text">About Us</h1>
+            <p class="content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum auctor urna vitae mattis. Aliquam finibus at lorem eu dignissim. Donec finibus, purus quis aliquet congue, sem sapien tristique quam, ut tincidunt magna elit vitae ante. Phasellus ullamcorper quam neque, ut rutrum nisl sollicitudin sed. Curabitur eu tortor eu nulla euismod rhoncus id id quam. Cras orci libero, mattis vitae est at, imperdiet hendrerit odio. Phasellus quis ante lectus. Donec gravida vestibulum tortor eget dignissim. Maecenas hendrerit elementum gravida. Mauris sed eleifend nisi, eu tempus augue. Curabitur aliquam ac justo eu porttitor. Aenean ultrices at eros et accumsan. Donec auctor risus at pharetra tincidunt.</p>
+        </div>
+        <div class="content-child right">
+            <h2 class="content-text">Our Team</h2>
+            <table style="width:100%;">
+                <tr>
+                    <td rowspan="3"><img style="width: 150px; height: auto;" src="./images/team/staff-1.png"></td>
+                    <th>John Doe</th>
+                </tr>
+                <tr>
+                    <td style="font-style: italic;">CEO</td>
+                </tr>
+                <tr>
+                    <td>John is responsible for...gravida vestibulum tortor eget dignissim. Maecenas hendrerit elementum gravida. Mauris sed eleifend nisi, eu tempus augue</td>
+                </tr>
+            </table>
+            <br>
+            <table style="width:100%; border: solid 1px cyan;">
+                <tr>
+                    <td rowspan="3"><img style="width: 150px; height: auto;" src="./images/team/staff-2.png"></td>
+                    <th>Marie Ann</th>
+                </tr>
+                <tr>
+                    <td style="font-style: italic;">VP Team Sales</td>
+                </tr>
+                <tr>
+                    <td>Marie is responsible for...gravida vestibulum tortor eget dignissim. Maecenas hendrerit elementum gravida. Mauris sed eleifend nisi, eu tempus augue</td>
+                </tr>
+            </table>
+            <br>
+            <table style="width:100%; border: solid 1px cyan;">
+                <tr>
+                    <td rowspan="3"><img style="width: 150px; height: auto;" src="./images/team/staff-3.png"></td>
+                    <th>Mary Jane</th>
+                </tr>
+                <tr>
+                    <td style="font-style: italic;">VP Marketing</td>
+                </tr>
+                <tr>
+                    <td>MJ is responsible for...gravida vestibulum tortor eget dignissim. Maecenas hendrerit elementum gravida. Mauris sed eleifend nisi, eu tempus augue</td>
+                </tr>
+            </table>
+        </div>
+    </div>
 </body>
 </html>

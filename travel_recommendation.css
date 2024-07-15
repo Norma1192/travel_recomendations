@@ -35,7 +35,7 @@ nav a {
     height: auto;
 }
 
-#logo h2{
+#logo h2 {
     text-align: center;
     margin: 1px;
 }
@@ -49,6 +49,11 @@ div.content-child {
     height: 80%;
 }
 
+div.content-child.right {
+    overflow: auto;
+    overscroll-behavior: contain;
+}
+
 div.content-parent {
     align-items: center;
     justify-content: space-between;
@@ -58,7 +63,7 @@ div.content-parent {
 
 div.left {
     align-content: center;
-    
+
 }
 
 div.left h1 {
@@ -68,5 +73,24 @@ div.left h1 {
 }
 
 .content-text {
-    color:cornsilk;
+    color: cornsilk;
 }
+
+.result-info {
+    background-color: rgba(255, 248, 220, 0.5);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.result-info h2 {
+    text-align: center;
+    color: #04213e;
+}
+
+.result-info img {
+    margin: auto;
+    align-self: center;
+    width: 80%;
+    height: auto;
+}
+

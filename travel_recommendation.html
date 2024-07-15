@@ -25,26 +25,26 @@
             <img src="logo.png">
             <h2>Around the World</h2>
         </div>
+        <ul class="ul-navbar" id="ul-right">
+            <li><input type="text" id="destinationInput" placeholder="Enter a destination keyword"></li>
+            <li><button id="searchBtn" onclick="searchInfo()">Search</button></li>
+            <li><button id="resetBtn" onclick="resetInfo()">Clear</button></li>
+        </ul>
         <ul class="ul-navbar" id="ul-center">
             <li><a href="./travel_recommendation.html">Home</a></li>
             <li><a href="./about_us.html">About Us</a></li>
             <li><a href="./contact_us.html">Contact Us</a></li>
         </ul>
-        <ul class="ul-navbar" id="ul-right">
-            <li><input type="text" id="" placeholder="Enter a destination keyword"></li>
-            <li><button onclick="searchInfo()">Search</button></li>
-            <li><button onclick="resetInfo()">Reset</button></li>
-        </ul>
+
     </nav>
-    <div class="content-parent" style="border: solid 1px yellow;">
-        <div class="content-child left" style="border: solid 1px red;">
+    <div class="content-parent">
+        <div class="content-child left">
             <h1 class="content-text">Live the Experience</h1>
             <p class="content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tristique odio orci,
                 sed dictum eros fermentum sit amet. Cras at orci at tortor condimentum semper. Donec euismod diam vel
                 tortor.</p>
         </div>
-        <div class="content-child right" style="border: solid 1px blue;">
-            <p>content</p>
+        <div class="content-child right" id="result">
         </div>
     </div>
     <script src="./travel_recommendation.js"></script>

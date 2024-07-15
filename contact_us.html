@@ -15,7 +15,47 @@
     <style>
         body {
             font-family: "Trirong", serif;
+        }      
+        
+        #contact-form {
+            margin-top: 1000px;
         }
+
+        input {
+            height: 30px;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        input, textarea {
+            display: block;
+            width: 80%;
+            background: rgba(255, 248, 220, 0.5);
+            font-family: "Trirong", serif;
+            font-size: 16px;
+            border: 0px;
+            border-radius: 5px;
+        }
+
+        label {
+            color: cornsilk;
+            font-size: 20px;
+        }
+
+        #contactBtn {
+            background-color: aquamarine;
+            width: 80%;
+            border: 0px;
+            height: 30px;
+            border-radius: 5px;
+            color: rgb(40, 40, 40);
+            font-family: "Trirong", serif;
+            font-size: 16px;
+        }
+
+        
     </style>
 </head>
 
@@ -30,38 +70,43 @@
             <li><a href="./about_us.html">About Us</a></li>
             <li><a href="./contact_us.html">Contact Us</a></li>
         </ul>
-        <ul class="ul-navbar" id="ul-right">
-            <li><input type="text" id="" placeholder="Enter a destination keyword"></li>
-            <li><button onclick="searchInfo()">Search</button></li>
-            <li><button onclick="resetInfo()">Reset</button></li>
-        </ul>
     </nav>
 
-    <div class="content-parent" style="border: solid 1px yellow;">
-        <div class="content-child left" style="border: solid 1px red;">
+    <div class="content-parent">
+        <div class="content-child left">
             <h1 class="content-text">Contact Us</h1>
             <p class="content-text">Feel free to contact us to get in touch.</p>
         </div>
-        <div class="content-child right" style="border: solid 1px blue;">
-            <form id="contactForm">
-                <div>
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your name">
-                </div>
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email">
-                </div>
-                <div>
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Enter your message"></textarea>
-                </div>
-                <button type="submit" onclick="thankyou()">Submit</button>
-            </form>
+        <div class="content-child right">
+            <div id="contactForm">
+                <form>
+                    <label for="name">Name</label><br>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+
+                    <label for="message">Message</label><br>
+                    <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea><br>
+
+                    <button id="contactBtn" type="submit" onclick="thankYou()">Submit</button>
+                </form>
+            </div>
         </div>
     </div>
 
-    <script src="./travel_recommendation.js"></script>
+    <script>
+        function thankYou() {
+            const name = document.getElementById("name");
+            const email = document.getElementById("email");
+            const message = document.getElementById("message");
+            if (name.value == "" || email.value == "" || message.value == "") {
+                alert("Please fill out all the information requested.");
+            } else {
+                alert("Thanks for contact us!");
+            }
+        }
+    </script>
 </body>
 
 </html>
